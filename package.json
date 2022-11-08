@@ -1,7 +1,7 @@
 {
   "name": "@merry-solutions/typed-empty-fields-filter",
   "version": "1.0.0",
-  "description": "",
+  "description": "This package provides functions for filtering arrays of objects based on empty values for given fields, returning arrays of modified types. Go check readme for more information.",
   "main": "./dist/index.js",
   "files": [
     "dist/**"
@@ -9,19 +9,23 @@
   "scripts": {
     "build": "tsup src/index.ts --minify --dts",
     "dev": "nodemon",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint": "eslint '*/**/*.{ts}' --quiet --fix",
     "test": "jest"
   },
   "husky": {
     "hooks": {}
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "*.{ts}": [
       "eslint --fix"
     ]
   },
-  "bin": "",
-  "keywords": [],
+  "keywords": [
+    "filter",
+    "filter-empty",
+    "typescript",
+    "array"
+  ],
   "author": {
     "name": "Volodymyr Yepishev",
     "email": "i.m.bwca@gmail.com"
